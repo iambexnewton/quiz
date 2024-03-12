@@ -14,11 +14,7 @@ body {
   overflow-x: hidden;
   background-color: #f8f8f8;
 }
-
-main {
-  padding: 1rem;
-}
-
+h1,
 h2,
 h3 {
   color: var(--secondary-text-color);
@@ -63,9 +59,6 @@ button {
   width: 10px;
 }
 
-.image-container {
-}
-
 .color-box {
   width: 50px;
   hight: 50px;
@@ -92,6 +85,10 @@ li {
   color: #fff;
 }
 
+.main-container {
+  padding: 100px 8px 8px 8px;
+}
+
 .quiz-container {
   padding: 1rem;
   margin-top: 2rem;
@@ -106,5 +103,12 @@ li {
 }
 
 .container p {
-  padding: 8px 0 0 8px;
+  padding: 8px 0 0 0px;
+}
+.results {
+  padding: 8px 8px;
+  margin-top: 16px;
+}
+
+.comment {
 }

@@ -98,20 +98,25 @@ const page = () => {
           </div>
         ) : (
           <div className='quiz-container'>
-            <h3>Results</h3>
-            <h3>Overall: {(result.score / 5) * 100}%</h3>
-            <p>
-              Total Questions: <span>{questions.length}</span>
-            </p>
-            <p>
-              Total Score: <span>{result.score}</span>
-            </p>
-            <p>
-              Correct Answers: <span>{result.correctAnswers}</span>
-            </p>
-            <p>
-              Wrong Answers: <span>{result.wrongAnswers}</span>
-            </p>
+            <h3>Your Results...</h3>
+            <h3 className='results'>Overall: {(result.score / 5) * 100}%</h3>
+            <h3 className='comment'>
+              {result.score <= 2 ? <p>...You should feel shame.</p> : null}
+            </h3>
+            <div className='results'>
+              <p>
+                Total Questions: <span>{questions.length}</span>
+              </p>
+              <p>
+                Total Score: <span>{result.score}</span>
+              </p>
+              <p>
+                Correct Answers: <span>{result.correctAnswers}</span>
+              </p>
+              <p>
+                Wrong Answers: <span>{result.wrongAnswers}</span>
+              </p>
+            </div>
             <button className='btn' onClick={handleSubmit}>
               Restart
             </button>
