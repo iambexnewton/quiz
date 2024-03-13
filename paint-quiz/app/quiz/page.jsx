@@ -1,7 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import { quiz } from "../data.js";
-import { useCallback } from "react";
 
 const page = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -11,7 +10,6 @@ const page = () => {
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
   const [showResult, setShowResult] = useState(false);
   const [showAnswers, setShowAnswers] = useState(false);
-
   const [result, setResult] = useState({
     score: 0,
     correctAnswers: 0,
@@ -94,9 +92,7 @@ const page = () => {
               </li>
             ))}
             {checked ? (
-              <button className='btn' onClick={nextQuestion}>
-                next
-              </button>
+              <button onClick={nextQuestion}>next</button>
             ) : (
               <button disabled className='btn-disabled' onClick={nextQuestion}>
                 next
@@ -110,7 +106,7 @@ const page = () => {
           >
             <h3 id='resultsSectionHeading'>Your Results...</h3>
             <h3 className='results'>Overall: {(result.score / 10) * 100}%</h3>
-            <h3 className='comment'>
+            <h3>
               {result.score <= 2 ? <p>...You should feel shame.</p> : null}
             </h3>
             <p>
@@ -125,12 +121,8 @@ const page = () => {
             <p>
               Wrong Answers: <span>{result.wrongAnswers}</span>
             </p>
-            <button className='btn' onClick={handleSubmit}>
-              Restart
-            </button>
-            <button className='btn' onClick={handleShowAnswers}>
-              View Answers
-            </button>
+            <button onClick={handleSubmit}>Restart</button>
+            <button onClick={handleShowAnswers}>View Answers</button>
             {showAnswers ? (
               <section aria-labelledby='answersSectionHeading'>
                 <div className='answer-container'>
