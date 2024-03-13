@@ -34,38 +34,8 @@ export const quiz = {
     },
     {
       id: 2,
-      question: "Which is the real Hempel Blue",
-      answers: [
-        {
-          id: 1,
-          name: "",
-          swatch: "",
-          code: "#005ba0",
-        },
-        {
-          id: 2,
-          name: "",
-          swatch: "",
-          code: "#0033a0",
-        },
-        {
-          id: 3,
-          name: "",
-          swatch: "",
-          code: "#0018a0",
-        },
-        {
-          id: 4,
-          name: "",
-          swatch: "",
-          code: "#000ba0",
-        },
-      ],
-      correctAnswer: 2,
-    },
-    {
-      id: 3,
-      question: "Find the odd Duck Egg, not found on Crown Paints",
+      question:
+        "Which of the following Duck Egg colors are not found on Crown Paints?",
       answers: [
         {
           id: 1,
@@ -75,16 +45,17 @@ export const quiz = {
         },
         {
           id: 2,
-          name: "Duck Egg Blue",
-          swatch: "L2590Y",
-          code: "#B5D0D4",
-        },
-        {
-          id: 3,
           name: "Duck Egg",
           swatch: "L4267Y",
           code: "#97B1C4",
         },
+        {
+          id: 3,
+          name: "Duck Egg Blue",
+          swatch: "L2590Y",
+          code: "#B5D0D4",
+        },
+
         {
           id: 4,
           name: "Soft Duck Egg ",
@@ -92,16 +63,16 @@ export const quiz = {
           code: "#83D0C8",
         },
       ],
-      correctAnswer: 3,
+      correctAnswer: 2,
     },
     {
-      id: 4,
+      id: 3,
       question: "Which is not a colour created by Chat GPT?",
       answers: [
         {
           id: 1,
-          name: "Sizzling Saffron: A7850G",
-          swatch: "FFA500",
+          name: "Sizzling Saffron",
+          swatch: "A7850G",
           code: "#FFA500",
         },
         {
@@ -126,27 +97,203 @@ export const quiz = {
       correctAnswer: 4,
     },
     {
-      id: 5,
-      question: "When was Hempel established",
+      id: 4,
+      question: "When was Hempel established?",
       answers: [
         {
+          id: 1,
           name: "1915",
           code: "#f5f2f3",
         },
         {
+          id: 2,
           name: "1916",
           code: "#f5f2f3",
         },
         {
+          id: 3,
           name: "1912",
           code: "#f5f2f3",
         },
         {
+          id: 4,
           name: "1908",
           code: "#f5f2f3",
         },
       ],
       correctAnswer: 1,
+    },
+    {
+      id: 5,
+      question: "What is the correct the spelling of Rune's Surname?",
+      answers: [
+        {
+          id: 1,
+          name: "Steenborg",
+          code: "#f5f2f3",
+        },
+        {
+          id: 2,
+          name: "Steenburg",
+          code: "#f5f2f3",
+        },
+        {
+          id: 3,
+          name: "Steenberg",
+          code: "#f5f2f3",
+        },
+        {
+          id: 4,
+          name: "Stenberg",
+          code: "#f5f2f3",
+        },
+      ],
+      correctAnswer: 3,
+    },
+    {
+      id: 6,
+      question: "Which of the following is called Revolution?",
+      answers: [
+        {
+          id: 1,
+          name: "",
+          code: "#646B6E",
+        },
+        {
+          id: 2,
+          name: "",
+          code: "#4697C9",
+        },
+        {
+          id: 3,
+          name: "",
+          code: "#D06171",
+        },
+        {
+          id: 4,
+          name: "",
+          code: "#fFDF85",
+        },
+      ],
+      correctAnswer: 1,
+    },
+    {
+      id: 7,
+      question:
+        "According to Crowns gender pay gap report 2023. Which statement is correct?",
+      answers: [
+        {
+          id: 1,
+          name: " Women's pay is 16.2% lower than the mean gender hourly pay.",
+          code: "#f5f2f3",
+        },
+        {
+          id: 2,
+          name: "Women's pay is 17.2% lower than the mean gender hourly pay.",
+          code: "#f5f2f3",
+        },
+        {
+          id: 3,
+          name: "Women's pay is 20.2% lower than the mean gender hourly pay.",
+          code: "#f5f2f3",
+        },
+        {
+          id: 4,
+          name: "Women's pay is 22.2% lower than the mean gender hourly pay.",
+          code: "#f5f2f3",
+        },
+      ],
+      correctAnswer: 4,
+    },
+    {
+      id: 8,
+      question:
+        "Since 2010 How many children have benefitted from projects ran by the Hempel Foundation",
+      answers: [
+        {
+          id: 1,
+          name: "285,000",
+          code: "#f5f2f3",
+        },
+        {
+          id: 2,
+          name: "300,000",
+          code: "#f5f2f3",
+        },
+        {
+          id: 3,
+          name: "305,000",
+          code: "#f5f2f3",
+        },
+        {
+          id: 4,
+          name: "385,000",
+          code: "#f5f2f3",
+        },
+      ],
+      correctAnswer: 4,
+    },
+    {
+      id: 9,
+      question: "Which color has the name Go Green",
+      answers: [
+        {
+          id: 1,
+          name: "",
+          swatch: "",
+          code: "#978767",
+        },
+        {
+          id: 2,
+          name: "",
+          swatch: "",
+          code: "#176559",
+        },
+        {
+          id: 3,
+          name: "",
+          swatch: "",
+          code: "#21645D",
+        },
+        {
+          id: 4,
+          name: "",
+          swatch: "",
+          code: "#686043",
+        },
+      ],
+      correctAnswer: 1,
+    },
+    {
+      id: 10,
+      question: "Which is the real Hempel Blue",
+      answers: [
+        {
+          id: 1,
+          name: "",
+          swatch: "",
+          code: "#005ba0",
+        },
+        {
+          id: 2,
+          name: "",
+          swatch: "",
+          code: "#0018a0",
+        },
+        {
+          id: 3,
+          name: "",
+          swatch: "",
+          code: "#0033a0",
+        },
+        {
+          id: 4,
+          name: "",
+          swatch: "",
+          code: "#000ba0",
+        },
+      ],
+      correctAnswer: 3,
     },
   ],
 };

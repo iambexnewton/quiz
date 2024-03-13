@@ -10,6 +10,8 @@ const page = () => {
   const [checked, setChecked] = useState(false);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
   const [showResult, setShowResult] = useState(false);
+  const [showAnswers, setShowAnswers] = useState(false);
+
   const [result, setResult] = useState({
     score: 0,
     correctAnswers: 0,
@@ -57,20 +59,25 @@ const page = () => {
     setChecked(false);
   };
 
+  const handleShowAnswers = useCallback(() => {
+    setShowAnswers(!showAnswers);
+  });
+
   return (
     <div className='container'>
       <div>
         {!showResult ? (
-          <div className='quiz-container'>
-            <h1 className='header'>
+          <section
+            className='quiz-container'
+            aria-labelledby='questionSectionHeading'
+          >
+            <h1 className='header' id='questionSectionHeading'>
               Question: {activeQuestion + 1}
               <span>/{questions.length}</span>
             </h1>
-
             <div className='question'>
               <h2>{questions[activeQuestion].question}</h2>
             </div>
-
             {answers.map((answer, index) => (
               <li
                 key={index}
@@ -95,32 +102,53 @@ const page = () => {
                 next
               </button>
             )}
-          </div>
+          </section>
         ) : (
-          <div className='quiz-container'>
-            <h3>Your Results...</h3>
-            <h3 className='results'>Overall: {(result.score / 5) * 100}%</h3>
+          <section
+            className='quiz-container'
+            aria-labelledby='resultsSectionHeading'
+          >
+            <h3 id='resultsSectionHeading'>Your Results...</h3>
+            <h3 className='results'>Overall: {(result.score / 10) * 100}%</h3>
             <h3 className='comment'>
               {result.score <= 2 ? <p>...You should feel shame.</p> : null}
             </h3>
-            <div className='results'>
-              <p>
-                Total Questions: <span>{questions.length}</span>
-              </p>
-              <p>
-                Total Score: <span>{result.score}</span>
-              </p>
-              <p>
-                Correct Answers: <span>{result.correctAnswers}</span>
-              </p>
-              <p>
-                Wrong Answers: <span>{result.wrongAnswers}</span>
-              </p>
-            </div>
+            <p>
+              Total Questions: <span>{questions.length}</span>
+            </p>
+            <p>
+              Total Score: <span>{result.score}</span>
+            </p>
+            <p>
+              Correct Answers: <span>{result.correctAnswers}</span>
+            </p>
+            <p>
+              Wrong Answers: <span>{result.wrongAnswers}</span>
+            </p>
             <button className='btn' onClick={handleSubmit}>
               Restart
             </button>
-          </div>
+            <button className='btn' onClick={handleShowAnswers}>
+              View Answers
+            </button>
+            {showAnswers ? (
+              <section aria-labelledby='answersSectionHeading'>
+                <div className='answer-container'>
+                  <h4 id='answersSectionHeading'>Answers</h4>
+                  {questions.map((question, index) => (
+                    <div key={index} className='answer-section'>
+                      <p className='answers-question'>
+                        Question: {question.id}
+                      </p>
+                      <p className='correct-answer'>
+                        Correct Answer: {question.correctAnswer}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            ) : null}
+          </section>
         )}
       </div>
     </div>
