@@ -35,7 +35,7 @@ export const quiz = {
     {
       id: 2,
       question:
-        "Which of the following Duck Egg colors are not found on Crown Paints?",
+        "Which of the following Duck Egg colours are not found on Crown Paints?",
       answers: [
         {
           id: 1,
@@ -207,7 +207,7 @@ export const quiz = {
     {
       id: 8,
       question:
-        "Since 2010 How many children have benefitted from projects ran by the Hempel Foundation",
+        "Since 2010 How many children have benefitted from projects run by the Hempel Foundation",
       answers: [
         {
           id: 1,
@@ -234,7 +234,7 @@ export const quiz = {
     },
     {
       id: 9,
-      question: "Which color has the name Go Green",
+      question: "Which colour has the name Go Green",
       answers: [
         {
           id: 1,

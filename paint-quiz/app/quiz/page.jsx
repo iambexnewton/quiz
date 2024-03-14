@@ -92,10 +92,10 @@ const page = () => {
               </li>
             ))}
             {checked ? (
-              <button onClick={nextQuestion}>next</button>
+              <button onClick={nextQuestion}>Next</button>
             ) : (
               <button disabled className='btn-disabled' onClick={nextQuestion}>
-                next
+                Next
               </button>
             )}
           </section>
