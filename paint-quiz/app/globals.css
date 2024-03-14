@@ -93,7 +93,16 @@ li {
 }
 
 .main-container {
-  padding: 100px 8px 8px 8px;
+  padding: var(--padding-small);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-container > .button {
+  flex: 1;
 }
 
 .quiz-container {

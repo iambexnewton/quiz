@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main>
       <div className='main-container'>
-        <Link href='/quiz'>
+        <Link className='button' href='/quiz'>
           <button>Start</button>
         </Link>
       </div>
