@@ -76,7 +76,7 @@ li {
   border-radius: var(--border-radius-medium);
   cursor: pointer;
   display: flex;
-  height: 100px;
+  height: 80px;
   justify-content: center;
   list-style-type: none;
   margin-block-start: var(--margin-small);
