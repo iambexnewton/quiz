@@ -130,22 +130,22 @@ export const quiz = {
         {
           id: 1,
           name: "Steenborg",
-          code: "#f5f2f3",
+          code: "#ffffff",
         },
         {
           id: 2,
           name: "Steenburg",
-          code: "#f5f2f3",
+          code: "#ffffff",
         },
         {
           id: 3,
           name: "Steenberg",
-          code: "#f5f2f3",
+          code: "#ffffff",
         },
         {
           id: 4,
           name: "Stenberg",
-          code: "#f5f2f3",
+          code: "#ffffff",
         },
       ],
       correctAnswer: 3,
