@@ -193,12 +193,12 @@ export const quiz = {
         },
         {
           id: 3,
-          name: "Hempayatch",
+          name: "Hempagloss",
           code: "#ffffff",
         },
         {
           id: 4,
-          name: "Hempafire",
+          name: "Hempatop",
           code: "#ffffff",
         },
       ],
