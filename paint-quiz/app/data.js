@@ -179,27 +179,26 @@ export const quiz = {
     },
     {
       id: 7,
-      question:
-        "According to Crowns gender pay gap report 2023. Which statement is correct?",
+      question: "Which of these is a brand Hempel stocks?",
       answers: [
         {
           id: 1,
-          name: " Women's pay is 16.2% lower than the mean gender hourly pay.",
+          name: "Hempadynamic",
           code: "#ffffff",
         },
         {
           id: 2,
-          name: "Women's pay is 17.2% lower than the mean gender hourly pay.",
+          name: "Hemplife",
           code: "#ffffff",
         },
         {
           id: 3,
-          name: "Women's pay is 20.2% lower than the mean gender hourly pay.",
+          name: "Hempayatch",
           code: "#ffffff",
         },
         {
           id: 4,
-          name: "Women's pay is 22.2% lower than the mean gender hourly pay.",
+          name: "Hempafire",
           code: "#ffffff",
         },
       ],
